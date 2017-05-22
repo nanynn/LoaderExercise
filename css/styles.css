@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+h1 {
+    padding: 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.container img {
+    width: 100%;
+}
+
+.row > div {
+    margin: 15px 0;
+}
