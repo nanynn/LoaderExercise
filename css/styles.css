@@ -18,3 +18,29 @@ h1 {
 .row > div {
     margin: 15px 0;
 }
+
+.loader{
+	opacity: 0;
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 9999;
+	transition: opacity 2s linear;
+	-webkit-transition: opacity 2s linear;
+	-moz-transition: opacity 2s linear;
+
+}
+
+.loader img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+.loading .loader{
+	opacity: 1;
+}

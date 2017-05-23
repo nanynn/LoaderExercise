@@ -6,7 +6,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="loading">
+	<div class="loader">
+		<img src="img/hsk.gif">
+	</div>
+
 	<div class="container">
 		<h1>Loader Animation Exercise</h1>
 		<div class="row" id="row"></div>
@@ -20,7 +24,15 @@
 
   <script>
   	//Escribe tu código aquí
+  	$(document).ready(function(){
+  		setTimeout(function(){
+  			$('body').removeClass('loading');
   	
+	  		setTimeout(function(){
+	  			$('.loader').css('display', 'none');
+	  		}, 2000);
+  		}, 3000);
+  	});
   </script>
 </body>
 </html>
